@@ -18,8 +18,9 @@ public class AnimalController {
     private String courseName;
     @Value("${ilsu sunal}")
     private String fullName;
+
     @PostConstruct
-    public void start(){
+    public void load(){
         this.animals = new HashMap<>();
         this.animals.put(1, new Animal(1, "maymun"));
     }
